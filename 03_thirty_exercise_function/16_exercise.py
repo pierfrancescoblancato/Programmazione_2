@@ -1,0 +1,4 @@
+def calculate_sum(*nums: int):
+    return sum(nums)
+
+print(calculate_sum(1, 2, 3, 4, 5, 6, 7, 8, 9, 10))
