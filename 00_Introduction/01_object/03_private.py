@@ -5,6 +5,9 @@ class Person:
         
     def getAge(self):
         return self.__age
+    
+    def setAge(self, newAge):
+        self.__age = newAge
 
 p1 = Person("marta", 20)
 
