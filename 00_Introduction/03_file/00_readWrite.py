@@ -8,9 +8,9 @@ print(content)
 
 file_stream.close()
 with open(file,'r') as f: # read = intero testo, readline = riga per riga, readlines = lista di righe
-    content1 = f.read
-    content2 = f.readline
-    content3 = f.readlines
+    content1 = f.read()
+    content2 = f.readline()
+    content3 = f.readlines()
     
 print(content1,content2,content3)
 
