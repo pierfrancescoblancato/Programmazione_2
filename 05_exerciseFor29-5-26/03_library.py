@@ -3,7 +3,7 @@ class Book:
         self.title = title
         self.author = author
         self.publisher = publisher
-        self.__purchasePrice = purchasePrice  # Store the purchase price
+        self.__purchasePrice = purchasePrice
         
     def getPurchasePrice(self):
         return self.__purchasePrice
@@ -16,7 +16,7 @@ class Catalog:
         self.name = name
         self.description = description
         self.books = books
-        self.setTotalValue()  # Just call the method, it handles the assignment
+        self.setTotalValue()
     
     def __eq__(self, other):
         if isinstance(other, Catalog):

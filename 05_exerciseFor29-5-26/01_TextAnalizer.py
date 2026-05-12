@@ -1,6 +1,3 @@
-# stringa in input
-string = input("Enter a string: ")
-
 # 1. conta le parole serparate da spazi
 def countWordsSeparatedSpaces(string: str):
     count = len(string.split())
@@ -50,6 +47,9 @@ def countCharter(string: str):
         else:
             continue
     return count
+
+# stringa in input
+string = input("Enter a string: ")
             
 print(f"Il numero di parole separate da spazi: {countWordsSeparatedSpaces(string)}")
 print(f"Il numero di vocali: {countVowels(string)}")
