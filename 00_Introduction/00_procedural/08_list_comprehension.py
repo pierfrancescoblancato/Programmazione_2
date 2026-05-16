@@ -1,3 +1,8 @@
+numero = 7
+risultato = "Pari" if numero % 2 == 0 else "Dispari"
+
+print(risultato) # Output: Dispari
+
 a = []
 for i in range(100):
     a.append(i * 3)
