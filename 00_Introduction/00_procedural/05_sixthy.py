@@ -1,14 +1,12 @@
-#truthy and falsy values
-#truthy: any value different of 0
+# valori truthy e falsy
+# truthy: qualsiasi valore diverso da 0
 a = 0.01
 b = "ciao"
 
-# falsy: none, null, empty string, empty collection
+# falsy: none, null, stringa vuota, collezione vuota
 c = 0 
 d = ""
 if d: 
     print("truthy")
 else: 
     print("false")
-    
-

@@ -2,7 +2,7 @@ class MotoCycle:
     def accelerate(self):
         print("la moto sta accelerando ")
     
-class Car: #class className(superClass Name):   
+class Car:  # class NomeClasse(NomeSuperClasse):
     def accelerate(self):
         print(f"la macchina sta accelerando ")
 
@@ -10,18 +10,20 @@ class Bici:
     def accelerate(self):
         print("la bici sta accelerando ")
         
-lists =[]
+lista = []  # rinominato da 'lists' per evitare conflitto con la funzione built-in
 
 c1 = Car()
-lists.append(c1)
+lista.append(c1)
 
 m1 = MotoCycle()
-lists.append(m1)
+lista.append(m1)
 
 b1 = Bici()
-lists.append(b1)
+lista.append(b1)
 
-print(lists)
+print(lista)  # stampa la lista di oggetti (indirizzi di memoria)
 
-for el in lists:
-    el.accelerate()
+# Polimorfismo: ogni oggetto viene trattato in modo uniforme
+# Python utilizza il duck typing: "se cammina come un'anatra e starnazza come un'anatra, allora è un'anatra"
+for el in lista:
+    el.accelerate()  # ogni oggetto esegue il proprio metodo accelerate

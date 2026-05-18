@@ -1,13 +1,8 @@
-#la classe e' uno stampino a cui all'interno definiamo uno schema, non 'rigido
 class Student: 
-    #attributi di classe, quindi si riferiscono all intera classe
+    description = "questa classe dovrebbe essere usata ogni volta che creerai un nuovo studente"
 
-    description = "this class is supposed to be used anytime you will create a new student"
-        
-    #metodi speciali, definiscono come si comportano degli oggetti della classe quando viene istanziato in situazioni in particolare/specifici
-    #non esiste overloading dei costruttori, quindi non esistono piu costruttori con solo parametri differenti
     def __init__(self, name, surname, age = 1, course= "NULL"):
-        self.name= name.strip().capitalize()
+        self.name = name.strip().capitalize()
         self.surname = surname.strip().capitalize()
         self.age = age
         self.course = course
@@ -23,10 +18,9 @@ class Student:
         else:
             return False
             
-s1 = Student("tommaso","pappalardo", 32, "developer")
-s2 = Student("tommaso","pappalardo", 15, "developer")
-s3 = Student("tommaso","pappalardo", 32, "cybersecurty")
+s1 = Student("tommaso", "pappalardo", 32, "developer")
+s2 = Student("tommaso", "pappalardo", 15, "developer")
+s3 = Student("tommaso", "pappalardo", 32, "cybersecurty")
 
-print(s1 == s2)
-print(s1 == s3)
-
+print(s1 == s2)  # False: età diversa (32 vs 15)
+print(s1 == s3)  # True: nome, cognome ed età uguali (course non viene confrontato)

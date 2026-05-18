@@ -15,11 +15,11 @@ print(a)
 x = [i * 3 for i in range(100) ]
 print(x)
 
-#z = [a for b in c if d]
+# z = [a for b in c if d]
 # a = i * 3
 # b = i 
 # c = range(100)
-# d =
+# d = condizione (i % 2 == 0)
 z = [i for i in range(21) if i % 2 == 0]
 print(z)
 
@@ -36,5 +36,8 @@ print(cw)
 
 u = "ciao a tutti, oggi c'è una bellissima giornata e siamo il 10 aprile"
 
+# List comprehension con operatore ternario:
+# Restituisce "e" se la lunghezza della parola è pari, altrimenti "o"
+# Itera solo sui caratteri alfabetici della stringa u
 ow = [ "e" if len(i) % 2 == 0 else "o" for i in u if i.isalpha() ]
 print(ow)

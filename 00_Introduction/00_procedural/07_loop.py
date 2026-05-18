@@ -1,31 +1,31 @@
 a = 0
 
-# A while loop that continues as long as 'a' is less than or equal to 10
+# Un ciclo while che continua finché 'a' è minore o uguale a 10
 while a <= 10:
-    a += 1  # Increment 'a' by 1 at each iteration
+    a += 1  # Incrementa 'a' di 1 a ogni iterazione
     
-    # Check if 'a' is odd using the modulo operator (%)
+    # Verifica se 'a' è dispari usando l'operatore modulo (%)
     if a % 2 != 0:
-        continue  # Skip the rest of the loop and start the next iteration
+        continue  # Salta il resto del ciclo e passa all'iterazione successiva
     
-    # This line only runs if 'a' is even
+    # Questa riga viene eseguita solo se 'a' è pari
     print(a)
 else:
-    # The 'else' block in a loop executes when the condition becomes false
+    # Il blocco 'else' in un ciclo viene eseguito quando la condizione diventa falsa
     print("ciclo finito")
     
 fruits = ["fragola","banana","cocco"]
 
-# Method 1: Iterating directly over the elements (most "Pythonic")
+# Metodo 1: Iterare direttamente sugli elementi (il più "Pythonico")
 for fruit in fruits:
     print(fruit)
     
-# Method 2: Iterating using an index and range()
-# len(fruits) returns 3, so range(3) generates 0, 1, 2
+# Metodo 2: Iterare usando un indice e range()
+# len(fruits) restituisce 3, quindi range(3) genera 0, 1, 2
 for i in range(len(fruits)):
-    print(f"element {i+1}: {fruits[i]}")
+    print(f"elemento {i+1}: {fruits[i]}")
 
-# Method 3: Using enumerate()
-# This is the best practice when you need both the index and the value
+# Metodo 3: Usare enumerate()
+# Questa è la pratica migliore quando servono sia l'indice che il valore
 for i, el in enumerate(fruits):
-    print(f"element {i+1}: {el}")
+    print(f"elemento {i+1}: {el}")

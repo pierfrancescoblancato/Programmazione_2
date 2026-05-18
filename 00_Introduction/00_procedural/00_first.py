@@ -1,19 +1,18 @@
-# Prompt user for input, convert the string to an integer, and store it in 'a'
+# Chiede all'utente un input, converte la stringa in intero e la memorizza in 'a'
 a = int(input("Enter a value: ")) 
 
-# Prompt user for input, convert the string to an integer, and store it in 'b'
+# Chiede all'utente un input, converte la stringa in intero e la memorizza in 'b'
 b = int(input("Enter a value: ")) 
 
-# Define a function named 'sum' that takes two arguments
+# Definisce una funzione di nome 'sum' che accetta due argomenti
 def sum(a, b):
-    return a + b  # Return the mathematical sum of the two inputs
+    return a + b  # Restituisce la somma matematica dei due input
 
-# Print values using commas (Python automatically adds spaces between items)
-print("the value of a is:", a,"and, of b is:", b, "and the sum of a and b is", sum(a,b))
+# Stampa i valori usando le virgole (Python aggiunge automaticamente spazi tra gli elementi)
+print("the value of a is:", a, "and, of b is:", b, "and the sum of a and b is", sum(a, b))
 
-# Convert a float to an integer (this truncates the decimal, printing 8)
+# Converte un float in intero (tronca la parte decimale, stampando 8)
 print(int(8.9))
 
-# Print using an f-string for cleaner formatting and direct variable injection
-print(f"the value of a is: {a} and of b is: {b} and the sum of a and b is {sum(a,b)}")
-
+# Stampa usando una f-string per una formattazione più pulita e un'iniezione diretta delle variabili
+print(f"the value of a is: {a} and of b is: {b} and the sum of a and b is {sum(a, b)}")

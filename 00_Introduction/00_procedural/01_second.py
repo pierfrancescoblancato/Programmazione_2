@@ -1,12 +1,12 @@
-# Initialize a list containing three strings
-fruit = ["ananas","banana","mela"]
+# Inizializza una lista contenente tre stringhe
+fruit = ["ananas", "banana", "mela"]
 
-# Check if "ananas" exists in the list; 'a' is overwritten with a Boolean (True)
+# Verifica se "ananas" esiste nella lista; 'a' viene sovrascritto con un valore booleano (True)
 a = "ananas" in fruit
 
-# Create a new list object 'c' that is a copy of the 'fruit' list
+# Crea un nuovo oggetto lista 'c' che è una copia della lista 'fruit'
 c = list(fruit)
 
-# Print the original list to the console
+# Stampa la lista originale nella console
 print(fruit)
 print(type(fruit))

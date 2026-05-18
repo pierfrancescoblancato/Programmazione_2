@@ -1,25 +1,25 @@
-# Initialize a list with one element
+# Inizializza una lista con un elemento
 lista_spesa = ["banane"]
 
-# Truthiness check: an empty list [] is False, a list with items is True
+# Controllo di truthiness: una lista vuota [] è False, una lista con elementi è True
 if lista_spesa:
-    print(f"you have to buy {lista_spesa}")
+    print(f"devi comprare {lista_spesa}")
 else:
-    # This runs only if the list is empty
-    print("you havent to buy")
+    # Questo viene eseguito solo se la lista è vuota
+    print("non devi comprare nulla")
     
-# Get user input and convert it to an integer
+# Richiede un input all'utente e lo converte in un intero
 a = int(input("inserire l eta: "))
 
-# Standard if-else block to determine adulthood
+# Blocco if-else standard per determinare la maggiore età
 if(a < 18):
     is_adult = False
 else:
     is_adult = True
     
-# Ternary Operator: a compact, one-line version of the if-else above
-# Syntax: [value_if_true] if [condition] else [value_if_false]
+# Operatore ternario: una versione compatta in una riga dell'if-else sopra
+# Sintassi: [valore_se_vero] if [condizione] else [valore_se_falso]
 is_ad = False if a < 18 else True
 
-# Print both results to verify they are identical
+# Stampa entrambi i risultati per verificare che siano identici
 print(is_adult, is_ad)

@@ -1,32 +1,41 @@
-list = ["GM",25 ,"M"]
+lista = ["GM", 25, "M"]
 
-dict = {"key": "value","name": "gm", "age": 25, "gender": "m" }
+dizionario = {"key": "value", "name": "gm", "age": 25, "gender": "m"}
 
-print(dict)
-print(type(dict))
-print(dict["name"])
+print(dizionario)
+print(type(dizionario))
+print(dizionario["name"])
 
-print(dict.get("name","NAN"))
+# Metodo get(): restituisce il valore se la chiave esiste, altrimenti restituisce "NAN"
+print(dizionario.get("name", "NAN"))
 
-key = input("cosa vuoi sapere: ")
-print(dict.get(key,"NAN"))
+chiave = input("cosa vuoi sapere: ")
+print(dizionario.get(chiave, "NAN"))
 
-if not "citta" in dict:
-    dict["citta"] = "catania"
+# Aggiunge una nuova chiave "citta" se non esiste già nel dizionario
+if not "citta" in dizionario:
+    dizionario["citta"] = "catania"
 
-print(dict)
+print(dizionario)
 
-gender = dict.pop("gender")
-print(gender)
-print(dict)
+# pop() rimuove la chiave specificata e restituisce il valore associato
+genere = dizionario.pop("gender")
+print(genere)
+print(dizionario)
 
-print(dict.clear)
+# clear() è un metodo, ma mancano le parentesi () per chiamarlo correttamente
+# Così stampa solo il riferimento al metodo, non lo esegue
+print(dizionario.clear)
 
-print(len(dict))
-print(sorted(dict))
+print(len(dizionario))
+# sorted() restituisce una lista ordinata delle chiavi del dizionario
+print(sorted(dizionario))
 
-for key in dict.keys():
-    print(dict[key])
+# Itera sulle chiavi del dizionario
+for chiave in dizionario.keys():
+    print(dizionario[chiave])
 
-for value in dict.values():
-    print(key,dict[key])
+# NOTA: L'ultimo ciclo ha un problema: usa 'key' che non è definita in questo scope
+# Inoltre stampa la stessa coppia per ogni valore
+for valore in dizionario.values():
+    print(chiave, dizionario[chiave])  # Errore: 'chiave' non è definita qui
