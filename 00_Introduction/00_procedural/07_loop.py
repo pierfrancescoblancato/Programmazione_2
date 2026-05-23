@@ -16,7 +16,7 @@ else:
     
 fruits = ["fragola","banana","cocco"]
 
-# Metodo 1: Iterare direttamente sugli elementi (il più "Pythonico")
+# Metodo 1: Iterare direttamente sugli elementi
 for fruit in fruits:
     print(fruit)
     

@@ -25,7 +25,6 @@ print(z)
 
 s = "ciao a tutti, oggi c'è una bellissima giornata e siamo il 10 aprile"
 s1 = s.split()
-
 print(s1)
 
 lw = [len(i) for i in s1]
@@ -34,10 +33,10 @@ print(lw)
 cw = [i.capitalize() for i in s1]
 print(cw)
 
-u = "ciao a tutti, oggi c'è una bellissima giornata e siamo il 10 aprile"
+u = "ciao a tutti , oggi c'è una bellissima giornata e siamo il 10 aprile"
 
 # List comprehension con operatore ternario:
 # Restituisce "e" se la lunghezza della parola è pari, altrimenti "o"
 # Itera solo sui caratteri alfabetici della stringa u
-ow = [ "e" if len(i) % 2 == 0 else "o" for i in u if i.isalpha() ]
+ow = [ "e" if len(i) % 2 == 0 else "o" for i in u.split() if i.isalpha() ]
 print(ow)

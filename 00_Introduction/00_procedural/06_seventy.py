@@ -12,6 +12,7 @@ else:
 a = int(input("inserire l eta: "))
 
 # Blocco if-else standard per determinare la maggiore età
+is_adult = False
 if(a < 18):
     is_adult = False
 else:

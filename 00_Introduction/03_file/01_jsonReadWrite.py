@@ -1,6 +1,6 @@
 import json 
 # JSON, acronimo di JavaScript Object Notation, è un formato testuale leggero, standard e indipendente dal linguaggio,
-# utilizzato per memorizzare e scambiare dati strutturati. I dati sono in formato salvati chiave:valore
+# utilizzato per memorizzare e scambiare dati strutturati. I dati sono salvati in formato chiave:valore
 
 filePath = "00_Introduction/03_file/assets/data1.json"
 data = 5

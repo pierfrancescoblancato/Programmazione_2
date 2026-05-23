@@ -3,9 +3,9 @@ import json
 filePath = "00_Introduction/03_file/assets/data2.json"
 
 class Vehicle:
-    def __init__(self, wheals, stearing):  # NOTA: errori di battitura (wheals/wheels, stearing/steering)
-        self.wheals = wheals
-        self.stearing = stearing
+    def __init__(self, wheels, steering): 
+        self.wheels = wheels
+        self.steering = steering
         
 v = Vehicle(4, 'volante')  # Crea un'istanza di Vehicle con 4 ruote e volante
 

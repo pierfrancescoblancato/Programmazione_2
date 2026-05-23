@@ -1,16 +1,18 @@
-import os 
+import os
 
-a = os.getcwd()#cartella di lavoro attuale
+a = os.getcwd()  # cartella di lavoro attuale
+print("cartella corrente:", a)
+print("cartelle e file:", os.listdir())
 
-print("cartella corrente ",a )
+# os.mkdir() - crea UNA cartella
+os.mkdir('andrea')
 
-print("cartelle e file: ", os.listdir()) # list di cartelle nel ambiente di lavoro
+# os.makedirs() - crea TUTTE le cartelle intermedie
+os.makedirs('andrea/documenti/foto/2024', exist_ok=True)
 
-#if 'requirements.txt' in os.listdir():
-    
-#os.mkdir('andrea') creare una cartella
-
-#os.rmdir('andrea')#eliminare una cartella, elimina solo se la cartella e' vuota
-
-
+# os.chdir() - cambia directory
 os.chdir('andrea')
+print("Ora in:", os.getcwd())
+
+# os.rmdir() - elimina solo se vuota
+os.rmdir('andrea/backup')  # se esiste ed è vuota

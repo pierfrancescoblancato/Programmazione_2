@@ -7,7 +7,7 @@ def factorial(n):
         # passo ricorsivo: n * fattoriale di (n-1)
         return n * factorial(n-1)
     
-factorial(3)
+print(factorial(998))
 # Calcolo passo passo:
 # factorial(3) = 3 * factorial(2)
 # factorial(2) = 2 * factorial(1)

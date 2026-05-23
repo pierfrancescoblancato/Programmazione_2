@@ -6,7 +6,7 @@ b = "ciao"
 # falsy: none, null, stringa vuota, collezione vuota
 c = 0 
 d = ""
-if d: 
+if a: 
     print("truthy")
 else: 
     print("false")
