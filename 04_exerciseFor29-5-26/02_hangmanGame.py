@@ -41,10 +41,10 @@ print(f"The word to guess is: {'*' * len(guessWord)}")
 while True:
     letter = input("Enter a letter: ").upper().strip()
     
-    risultato = printAsterisks(letter, guessWord)
-    if risultato == True:
+    result = printAsterisks(letter, guessWord)
+    if result == True:
         print(f"The letter found: {found}")
-    elif risultato == False:
+    elif result == False:
         attemps -= 1
     else:  # risultato è None
         continue

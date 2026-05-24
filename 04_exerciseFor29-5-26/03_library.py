@@ -1,3 +1,6 @@
+import subprocess
+subprocess.run("clear", shell=True)
+
 class Book:
     def __init__(self, title, author, publisher, purchasePrice):
         self.title = title
@@ -35,8 +38,7 @@ class Catalog:
             newDescription = self.description + other.description
             newBooks = self.books + other.books
             newCatalog = Catalog(newName, newDescription, newBooks)
-            return newCatalog  # Moved inside the if block
-        # You might want to raise an error or return NotImplemented here
+            return newCatalog  
         
     def getTotalValue(self):
         return self.__totalValue

@@ -48,7 +48,6 @@ def countCharter(string: str):
             continue
     return count
 
-# stringa in input
 string = input("Enter a string: ")
             
 print(f"Il numero di parole separate da spazi: {countWordsSeparatedSpaces(string)}")

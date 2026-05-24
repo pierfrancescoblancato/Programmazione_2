@@ -1,3 +1,6 @@
+'''# DYNAMIC DISPATCH: ha senso ed è utile chiamare metodi di classi 
+differenti con lo stesso nome perchè in caso di iterazioni ad esempio 
+tra elementi differenti si potrà richiamare il metodo una volta sola (esempio alla riga 30)'''
 class MotoCycle:
     def accelerate(self):
         print("la moto sta accelerando ")

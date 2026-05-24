@@ -61,3 +61,5 @@ for valore in dizionario.values():
 print("\n--- Iterazione su chiave e valore con .items() ---")
 for chiave, valore in dizionario.items():
     print(f"{chiave} = {valore}")
+    
+print(dizionario.__dir__)
