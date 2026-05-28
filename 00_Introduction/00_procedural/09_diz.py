@@ -1,6 +1,3 @@
-# Lista di esempio (non utilizzata nel codice, ma lasciata come riferimento)
-lista = ["GM", 25, "M"]
-
 # Dizionario iniziale con coppie chiave-valore
 dizionario = {"key": "value", "name": "gm", "age": 25, "gender": "m"}
 

@@ -4,7 +4,7 @@ attemps = 3
 display = ""
 
 def gethiddenWords():
-    for w in range(3):
+    for w in range(attemps):
         word = input("Enter word do you want guess: ").upper().strip()
         if word.isalpha() and len(word) > 1:
             return word
@@ -46,7 +46,7 @@ while True:
         print(f"The letter found: {found}")
     elif result == False:
         attemps -= 1
-    else:  # risultato è None
+    else:  
         continue
     
     if attemps == 0:
