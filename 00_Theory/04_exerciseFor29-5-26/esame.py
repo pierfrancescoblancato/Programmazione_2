@@ -1,0 +1,15 @@
+#SCRIVERE UN PROGRAMMA CHE A PARTIRE DALLA LISTA DATA 
+# CREI UN DIZIONARIO CON ELEMENTI CHE HANNO 
+# COME CHIAVE: LE SOLE STRINGHE DELLA LISTA, OPPORTUNAMENTE SANIFICATE
+# CPME VALORE: LA STRINGA ORIGINALE NON SANIFICATA 
+
+
+a=["Aldo", 22.4, "GiovANNI",True, "    giaCOMO  "]
+
+b  = {}
+
+for e in a:
+    if type(e) == str:
+        b[e.lower().strip()] = e
+     
+print(b)
