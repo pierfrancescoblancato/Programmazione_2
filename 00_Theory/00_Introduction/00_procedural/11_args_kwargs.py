@@ -1,5 +1,4 @@
 # *ARGS: Argomenti Posizionali Variabili
-
 # L'asterisco singolo (*) davanti a 'names' è la vera magia.
 # Dice a Python: "Prendi tutti i valori sciolti che l'utente inserisce e 
 # impacchettali insieme dentro una Tupla chiamata 'names'".
@@ -29,7 +28,6 @@ roll_call("Gianmaria", "Franco", "Anna", "Mirko")
 
 
 # **KWARGS: Keyword Arguments
-
 # I due asterischi (**) davanti a 'amesquastra' dicono a Python: 
 # "Prendi tutti gli argomenti passati con un nome (chiave=valore) e 
 # impacchettali insieme dentro un Dizionario".
